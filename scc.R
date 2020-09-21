@@ -25,10 +25,10 @@ d <- data.frame() # blank dataframe
 
 # standard celeration chart using hrs_key ----
 ggplot(d, aes(x =0, y = 1/2000)) +
-  geom_point(alpha = 0) +
+  geom_point(alpha = 0) + # default point; remove 'alpha = 0' to make visible
   #geom_point(pch = 4) + # x for errors
   scale_y_log10(
-    name = "Count per Minute",
+    name = "Behavior Count per Minute",
     breaks = breaks, 
     minor_breaks = minor_breaks, 
     limits = c(1/2000,1e+03), 
@@ -52,10 +52,10 @@ ggplot(d, aes(x =0, y = 1/2000)) +
 
 # standard celeration chart using min_key ----
 ggplot(d, aes(x =0, y = 1/2000)) +
-  geom_point(alpha = 0) +
+  geom_point(alpha = 0) + # default point; remove 'alpha = 0' to make visible
   #geom_point(pch = 4) + # x for errors
   scale_y_log10(
-    name = "Count per Minute",
+    name = "Behavior Count per Minute",
     breaks = breaks, 
     minor_breaks = minor_breaks, 
     limits = c(1/2000,1e+03), 
