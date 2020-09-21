@@ -20,7 +20,8 @@ hrs_key <-
   mutate(key = value/60) %>% 
   mutate(value = 1/value)
 
-x_values <- seq(0,150,7)
+x_values <- seq(0,150,7) # week duration values for the x-axis
+d <- data.frame() # blank dataframe
 
 # standard celeration chart using hrs_key ----
 ggplot(d, aes(x =0, y = 1/2000)) +
